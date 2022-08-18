@@ -1,0 +1,33 @@
+/*color de fondo de pantalla*/
+#fondo{
+   background-color:rgb(255, 255, 255);
+}
+
+/*aqui la imagen pricipal*/
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+#img {
+    height:200px;
+    width: 250px;
+}
+
+#titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#separador{
+    color:burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

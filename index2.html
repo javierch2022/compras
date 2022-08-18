@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Compras</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body id="fondo">
+    <!--imagen logo-->
+    <br> <!-- espacio -->
+    <div class="logo">
+        <img src="https://i.pinimg.com/originals/66/22/ab/6622ab37c6db6ac166dfec760a2f2939.gif" id="img" />
+    </div>
+    <br> <!-- aqui un salto-->
+    <!--AQUI COMIENZA LA PARTE DE LA VISTA-->
+    <div id="titulo">
+        <h1>Lista de Compras</h1>
+    </div>
+    <br> <!-- aqui un salto-->
+    <!--AQUI EL MENU A UTILIZAR-->
+    <form>
+        <div class="row">
+            <div class="mb-3 col-sm-8">
+                <label for="Item" class="form-label">Item</label>
+                <input type="text" class="form-control" id="item" placeholder="Ingrese el nombre del producto"
+                    aria-describedby="Item">
+            </div>
+            <div class="mb-3 col-sm-4">
+                <label for="Monto" class="form-label">Monto</label>
+                <input type="text" class="form-control" id="monto" placeholder="Ingrese precio">
+            </div>
+            <div class="col-sm-8">
+                <button type="reset" class="btn btn-outline-secondary" id="agregar">Agregar</button>
+            </div>
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-outline-warning" id="calcular">SUMAR</button>
+            </div>
+            <div class="col-sm-2">
+                <button onclick="refrescarPAgina();" class="btn btn-outline-success">NUEVA LISTA</button>
+            </div>
+
+        </div>
+    </form>
+    <div id="separador">
+        <h1>_______________________________________________________</h1>
+    </div>
+    <br>
+    <!-- AQUI MUESTRA LA LISTA-->
+    <table class="table table-active table-striped" id="tabla">
+        <thead>
+            <tH class="col-sm-8">Articulo</td>
+            <th class="col-sm-4">Monto</td>
+        </thead>
+        <tbody id="body">
+        </tbody>
+        <tfoot class="table-warning">
+            <tr>
+                <td class="col-sm-8">TOTAL</td>
+                <td class="col-sm-4" id="total">---</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- FINAL-->
+    <script src="./js/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
